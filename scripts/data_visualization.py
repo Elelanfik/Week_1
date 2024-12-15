@@ -1,8 +1,34 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-import matplotlib.pyplot as plt
-import seaborn as sns
+def plot_stock_data(data):
+    """
+    Plot stock data including the Moving Average.
+
+    Args:
+    - data (pd.DataFrame): Stock data with 'Date', 'Close', and 'Moving Average'.
+
+    Returns:
+    - A plot displaying Close Price and Moving Average.
+    """
+    plt.figure(figsize=(12, 6))  # Define the figure size
+    
+    # Plot Close Price
+    plt.plot(data['Date'], data['Close'], label='Close Price', color='blue', linewidth=2)
+    
+    # Plot Moving Average
+    plt.plot(data['Date'], data['Moving Average'], label='Moving Average', color='red', linewidth=2)
+    
+    # Add labels and title
+    plt.xlabel("Date")
+    plt.ylabel("Price")
+    plt.title("Stock Price with Moving Average")
+    
+    # Add grid, legend, and display
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
 
 def plot_univariate(data, column, plot_type="histogram", bins=10, kde=True):
     """
