@@ -35,36 +35,87 @@ This repository contains the code and analysis for a multi-step project focusing
   - Set up `task-3` branch for ongoing development.
   - Perform sentiment analysis, compute daily returns, and analyze the correlation.
 
+Here is a refined version of the README for GitHub with better readability and formatting, along with references to the repositories you mentioned:
+
+---
+
+# Project Name
+
 ## Installation and Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/repository-name.git
-Set up a Python virtual environment and install dependencies:
+Follow the steps below to set up the project environment and begin your analysis.
 
-bash
-Copy code
+### 1. Clone the Repository
+Clone the repository to your local machine using the command below:
+```bash
+git clone https://github.com/your-username/repository-name.git
+```
+
+### 2. Set Up a Python Virtual Environment
+Create and activate a virtual environment to manage dependencies:
+```bash
+# For Linux/macOS
 python -m venv env
-source env/bin/activate  # or .\env\Scripts\activate on Windows
-pip install -r requirements.txt
-Run Jupyter notebooks or Python scripts for analysis:
+source env/bin/activate
 
-bash
-Copy code
+# For Windows
+python -m venv env
+.\env\Scripts\activate
+```
+
+### 3. Install Dependencies
+Install the required Python packages using the `requirements.txt` file:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run Jupyter Notebooks or Python Scripts
+You can start analyzing the data by running the Jupyter notebooks or Python scripts:
+```bash
 jupyter notebook
-Contribution Guidelines
-Branches: Use separate branches (task-1, task-2, task-3) for each task.
-Commits: Make descriptive commits at least three times a day.
-Pull Requests: Create PRs for merging completed tasks into the main branch.
-License
+```
+
+---
+
+## Contribution Guidelines
+
+To maintain an organized and efficient workflow, please follow the guidelines below when contributing to the project:
+
+### 1. Branches
+Use separate branches for each task (e.g., `task-1`, `task-2`, `task-3`).
+
+### 2. Commits
+Make descriptive commits at least three times a day to ensure clear tracking of progress.
+
+### 3. Pull Requests
+Submit pull requests (PRs) for merging completed tasks into the main branch after reviewing your code and ensuring it is ready.
+
+---
+
+## License
+
 This project is licensed under the MIT License.
 
-vbnet
-Copy code
+---
 
-### Key Changes:
-- **Condensed task descriptions** to focus on the essential objectives and deliverables.
-- **Clear structure:** The tasks, folder structure, and setup instructions are straightforward and to the point.
-- **Minimal repetition**: The summary of each task is direct, making it easier to follow.
+## Key Changes
+- **Condensed task descriptions**: Focused on the essential objectives and deliverables for easier comprehension.
+- **Clear structure**: The task organization, folder structure, and setup instructions are simplified and easy to follow.
+- **Minimal repetition**: Task summaries are concise and straightforward.
 
-Let me know if you need any further adjustments!
+---
+
+## References
+
+For additional resources, you can check out the following repositories:
+
+- [Pynance](https://github.com/mqandil/pynance): A library for financial analysis, providing tools and methods for portfolio optimization.
+- [TA-Lib Python](https://github.com/ta-lib/ta-lib-python): A Python wrapper for TA-Lib, a popular library for technical analysis in financial markets.
+
+---
+
+Let me know if you need any further adjustments or clarifications!
+
+--- 
+
+This version has a clear, concise structure and adds the necessary references at the end, making it easier for anyone to follow the instructions and contribute to the project.
