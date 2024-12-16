@@ -2,13 +2,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def plot_univariate(data, column, title=None):
-   
-    plt.figure(figsize=(6, 4))  # Set figure size
-    sns.histplot(data[column], kde=True, bins=30, color='blue')  # Histogram with KDE
+    plt.hist(data[column], bins=30, color='blue', alpha=0.6)
     plt.title(title if title else f"Univariate Analysis of {column}")
     plt.xlabel(column)
     plt.ylabel("Frequency")
-    plt.show()
 
 # Function to plot bivariate analysis (assumed to be defined already)
 def plot_bivariate(data, x_column, y_column, title=None):
