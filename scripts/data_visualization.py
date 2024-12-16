@@ -27,3 +27,32 @@ def plot_stock_data(data, window, ax):
     ax.set_xlabel("Date")
     ax.set_ylabel("Price")
     ax.legend()    
+
+
+# Define the plot function with ma_window as argument
+def plot_stock_with_indicators(data, ma_window, rsi_window, title="Stock Data with Indicators"):
+    plt.figure(figsize=(10, 8))
+
+    # Plot Closing Price
+    plt.subplot(3, 1, 1)
+    plt.plot(data['Close'], label='Close Price', color='blue')
+    plt.title(f"{title} - Close Price")
+    plt.legend()
+
+    # Plot Moving Average
+    plt.subplot(3, 1, 2)
+    plt.plot(data['Close'], label='Close Price', color='blue', alpha=0.6)
+    plt.plot(data['Moving Average'], label=f"{ma_window}-Day Moving Average", color='orange')
+    plt.title(f"{title} - Moving Average")
+    plt.legend()
+
+    # Plot RSI
+    plt.subplot(3, 1, 3)
+    plt.plot(data['RSI'], label=f"RSI ({rsi_window} Days)", color='green')
+    plt.axhline(30, color='red', linestyle='--', label='Oversold (30)')
+    plt.axhline(70, color='red', linestyle='--', label='Overbought (70)')
+    plt.title(f"{title} - RSI")
+    plt.legend()
+
+    plt.tight_layout()
+    plt.show()
