@@ -111,11 +111,3 @@ For additional resources, you can check out the following repositories:
 
 - [Pynance](https://github.com/mqandil/pynance): A library for financial analysis, providing tools and methods for portfolio optimization.
 - [TA-Lib Python](https://github.com/ta-lib/ta-lib-python): A Python wrapper for TA-Lib, a popular library for technical analysis in financial markets.
-
----
-
-Let me know if you need any further adjustments or clarifications!
-
---- 
-
-This version has a clear, concise structure and adds the necessary references at the end, making it easier for anyone to follow the instructions and contribute to the project.
